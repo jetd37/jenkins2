@@ -20,6 +20,13 @@ pipeline {
             }
         }
 
+        stage('war'){
+            steps {
+                sh 'chmod +x mvnw'
+                sh './mvnw clean package spring-boot:repackage -Dmaven.test.skip=true'
+            }
+        }
+
         stage('Readfile and print its content') {
             steps {
                 echo 'Reading file... and Ready to print its content'
