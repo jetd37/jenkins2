@@ -4,6 +4,8 @@ pipeline {
         URL1 = 'https://github.com/jetd37/jenkins2.git'
         CREDENTIALSID = 'jetd'
     }
+
+
     stages {
         stage('Clone repository') {
             steps {
@@ -22,7 +24,7 @@ pipeline {
 
         stage('war'){
             steps {
-                sh 'chmod +x mvnw',
+                sh 'chmod +x mvnw'
                 sh "./mvnw clean package spring-boot:repackage -Dmaven.test.skip=true"
             }
         }
