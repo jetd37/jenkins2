@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        URL = 'https://github.com/jetd37/jenkins2.git'
+        URL1 = 'https://github.com/jetd37/jenkins2.git'
         CREDENTIALSID = 'jetd'
     }
     stages {
@@ -12,7 +12,7 @@ pipeline {
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
                         credentialsId: "${CREDENTIALSID}",
-                        url: "${URL}",
+                        url: "${URL1}",
                     ]]
                 ])
                 echo 'Cloning repository...'
