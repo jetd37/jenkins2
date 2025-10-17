@@ -9,7 +9,7 @@ pipeline {
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
                         credentialsId: 'jetd',
-                        url: 'https://github.com/jetd37/jenkins.git'
+                        url: 'https://github.com/jetd37/jenkins2.git'
                     ]]
                 ])
                 echo 'Cloning repository...'
