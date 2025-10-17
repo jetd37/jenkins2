@@ -12,7 +12,7 @@ pipeline {
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
                         credentialsId: "${CREDENTIALSID}",
-                        url: "${url}",
+                        url: "${URL}",
                     ]]
                 ])
                 echo 'Cloning repository...'
