@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        URL = 'https://github.com/jetd37/jenkins2.git',
-        CREDENTIALSID = 'jetd',
+        URL = 'https://github.com/jetd37/jenkins2.git'
+        CREDENTIALSID = 'jetd'
     }
     stages {
         stage('Clone repository') {
