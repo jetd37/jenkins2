@@ -45,6 +45,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
+                sh 'ls -la'
             }
         }
     }
