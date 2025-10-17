@@ -23,7 +23,7 @@ pipeline {
         stage('war'){
             steps {
                 sh 'chmod +x mvnw'
-                sh './mvnw clean package spring-boot:repackage -Dmaven.test.skip=true'
+                sh "./mvnw clean package spring-boot:repackage -Dmaven.test.skip=true"
             }
         }
 
